@@ -45,33 +45,16 @@
                   <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
                 </div>
 
-                <!-- Phone Input -->
-               
                 <!-- Password Input -->
                 <div class="form-group last mb-4">
                   <label for="password">Password</label>
                   <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
                 </div>
                 
-                <!-- Remember Me & Forgot Password -->
-                
-
                 <!-- Submit Button -->
                 <input type="submit" value="Log In" class="btn btn-block btn-primary">
 
-                <!-- Social Login -->
-                <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>
-                <div class="social-login">
-                  <a href="#" class="facebook">
-                    <span class="icon-facebook mr-3"></span> 
-                  </a>
-                  <a href="#" class="twitter">
-                    <span class="icon-twitter mr-3"></span> 
-                  </a>
-                  <a href="#" class="google">
-                    <span class="icon-google mr-3"></span> 
-                  </a>
-                </div>
+                
               </form>
             </div>
           </div>
