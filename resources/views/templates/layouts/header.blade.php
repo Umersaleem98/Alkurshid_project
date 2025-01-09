@@ -14,7 +14,7 @@
     <div class="branding d-flex align-items-center">
 
       <div class="container position-relative d-flex align-items-center justify-content-end">
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <a href="{{ url('/') }}" class="logo d-flex align-items-center me-auto">
           {{-- <img src="templates/assets/img/logo.png" alt=""> --}}
           <!-- Uncomment the line below if you also wish to use a text logo -->
           <h1 class="sitename">LOGO</h1>
@@ -23,28 +23,22 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="{{ url('/') }}" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#departments">Departments</a></li>
-            <li><a href="#doctors">Doctors</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li><a href="{{ url('about') }}">About</a></li>
+            <li><a href="{{ url('services') }}">Services</a></li>
+            <li class="dropdown">
+              <a href="#departments">
+                <span>Departments</span> 
+                <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
               <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
+                <li><a href="{{ url('departments/pathology') }}">Pathology</a></li>
+                <li><a href="{{ url('departments/radiology') }}">Radiology</a></li>
+                <li><a href="{{ url('departments/cardiology') }}">Cardiology</a></li>
               </ul>
             </li>
-            <li><a href="#contact">Contact</a></li>
+            
+            <li><a href="{{ url('doctors') }}">Doctors</a></li>
+            <li><a href="{{ url('contact') }}">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

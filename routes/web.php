@@ -1,12 +1,28 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Home\HomeController;
+use App\Http\Controllers\Home\About\AboutController;
+use App\Http\Controllers\Home\Contact\ContactController;
+use App\Http\Controllers\Home\Doctors\DoctorsController;
+use App\Http\Controllers\Home\Services\ServicesController;
+use App\Http\Controllers\Home\Department\DepartmentController;
 use App\Http\Controllers\Home\Appointment\AppointmentController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
 Route::get('/appointment', [AppointmentController::class, 'index'])->name('index');
+Route::get('/about', [AboutController::class, 'index'])->name('About us');
+Route::get('/services', [ServicesController::class, 'index'])->name('services');
+Route::get('/doctors', [DoctorsController::class, 'index'])->name('doctors');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact us');
+
+// Department Routes
+Route::get('/departments/pathology', [DepartmentController::class, 'Pathology'])->name('pathology');
+Route::get('/departments/cardiology', [DepartmentController::class, 'Cardiology'])->name('cardiology');
+Route::get('/departments/radiology', [DepartmentController::class, 'Radiology'])->name('radiology');
 
 // Auth Routes 
 Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');

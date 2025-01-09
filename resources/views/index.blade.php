@@ -44,8 +44,8 @@
     <!-- Faq Section -->
    @include('templates.layouts.faq')
 
-    <!-- Contact Section -->
- @include('templates.layouts.contact')
+    {{-- <!-- Contact Section -->
+ @include('templates.layouts.contact') --}}
 
   </main>
 
