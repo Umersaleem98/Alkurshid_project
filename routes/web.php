@@ -10,14 +10,22 @@ use App\Http\Controllers\Home\Doctors\DoctorsController;
 use App\Http\Controllers\Home\Services\ServicesController;
 use App\Http\Controllers\Home\Department\DepartmentController;
 use App\Http\Controllers\Home\Appointment\AppointmentController;
+use App\Http\Controllers\Dashboard\Contact\ContactDashboardController;
+use App\Http\Controllers\Dashboard\Doctors\DoctorsDashboardController;
+use App\Http\Controllers\Dashboard\Appointment\AppointmentDashboardController;
+use App\Http\Controllers\Dashboard\DoctorsCategory\CategoryDashboardController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/appointment', [AppointmentController::class, 'index'])->name('index');
 Route::get('/about', [AboutController::class, 'index'])->name('About us');
 Route::get('/services', [ServicesController::class, 'index'])->name('services');
 Route::get('/doctors', [DoctorsController::class, 'index'])->name('doctors');
+Route::get('/about-doctor/{id}', [DoctorsController::class, 'AboutDoctor']);
 Route::get('/contact', [ContactController::class, 'index'])->name('contact us');
+Route::post('/contacts', [ContactController::class, 'store']);
+
+Route::get('/appointment', [AppointmentController::class, 'index'])->name('index');
+Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
 
 // Department Routes
 Route::get('/departments/pathology', [DepartmentController::class, 'Pathology'])->name('pathology');
@@ -44,3 +52,20 @@ Route::middleware('auth')->group(function () {
         return view('dashboard');
     });
 });
+
+// Dashboard Contact Routs 
+Route::get('contact.index',[ContactDashboardController::class, 'index']);
+Route::get('/delete/{id}', [ContactDashboardController::class, 'destroy']);
+
+// Dashboard appointments Routs 
+Route::get('appointments.index',[AppointmentDashboardController::class, 'index']);
+
+// Dashboard Doctor Routs 
+Route::get('doctors.index',[DoctorsDashboardController::class, 'index']);
+Route::get('doctors.create',[DoctorsDashboardController::class, 'create']);
+Route::post('doctors.store',[DoctorsDashboardController::class, 'store']);
+
+Route::get('categories.index',[CategoryDashboardController::class, 'index']);
+Route::get('categories.create',[CategoryDashboardController::class, 'create']);
+Route::post('categories.store',[CategoryDashboardController::class, 'store']);
+

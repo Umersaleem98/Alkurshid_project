@@ -6,26 +6,29 @@
       <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
     </div><!-- End Section Title -->
 
+    @include('templates.layouts.alertfile.alert')
+
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+      <form action="{{ url('appointments') }}" method="post" role="form" class="php-email-form">
+        @csrf
         <div class="row">
           <div class="col-md-4 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
           </div>
           <div class="col-md-4 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
           </div>
           <div class="col-md-4 form-group mt-3 mt-md-0">
-            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
+            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone">
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 form-group mt-3">
-            <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required="">
+            <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date">
           </div>
           <div class="col-md-4 form-group mt-3">
-            <select name="department" id="department" class="form-select" required="">
+            <select name="department" id="department" class="form-select">
               <option value="">Select Department</option>
               <option value="Department 1">Department 1</option>
               <option value="Department 2">Department 2</option>
@@ -33,7 +36,7 @@
             </select>
           </div>
           <div class="col-md-4 form-group mt-3">
-            <select name="doctor" id="doctor" class="form-select" required="">
+            <select name="doctor" id="doctor" class="form-select">
               <option value="">Select Doctor</option>
               <option value="Doctor 1">Doctor 1</option>
               <option value="Doctor 2">Doctor 2</option>
