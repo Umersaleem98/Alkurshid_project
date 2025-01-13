@@ -111,7 +111,56 @@
                     </ul>
                 </li>
                 
-
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#services"
+                        aria-expanded="false" aria-controls="services">
+                        <i class="mdi mdi-cog-outline"></i>
+                        <span class="nav-text">Services</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse" id="services" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+                
+                            <li>
+                                <a class="sidenav-item-link" href="{{ url('services.index') }}">
+                                    <span class="nav-text">Service List</span>
+                                </a>
+                            </li>
+                
+                            <li>
+                                <a class="sidenav-item-link" href="{{ url('services.create') }}">
+                                    <span class="nav-text">Add Service</span>
+                                </a>
+                            </li>
+                
+                        </div>
+                    </ul>
+                </li>
+                
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#careers"
+                        aria-expanded="false" aria-controls="careers">
+                        <i class="mdi mdi-briefcase"></i>
+                        <span class="nav-text">Careers</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse" id="careers" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+                
+                            <li>
+                                <a class="sidenav-item-link" href="{{ url('careers.index') }}">
+                                    <span class="nav-text">Career List</span>
+                                </a>
+                            </li>
+                
+                            <li>
+                                <a class="sidenav-item-link" href="{{ url('careers.create') }}">
+                                    <span class="nav-text">Add Career</span>
+                                </a>
+                            </li>
+                
+                        </div>
+                    </ul>
+                </li>
+                
                 <li class="has-sub">
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#contact"
                         aria-expanded="false" aria-controls="contact">

@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers\Home\Services;
 
-use App\Http\Controllers\Controller;
+use App\Models\Service;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ServicesController extends Controller
 {
     public function index()
     {
-        return view('templates.pages.Services.services');
+        $services = Service::all();
+        return view('templates.pages.Services.services', compact('services'));
     }
 }

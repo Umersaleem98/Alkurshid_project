@@ -38,6 +38,7 @@
             </li>
             
             <li><a href="{{ url('doctors') }}">Doctors</a></li>
+            <li><a href="{{ url('career') }}">Careers</a></li>
             <li><a href="{{ url('contact') }}">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

@@ -5,13 +5,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Home\About\AboutController;
+use App\Http\Controllers\Home\Career\CareerController;
 use App\Http\Controllers\Home\Contact\ContactController;
 use App\Http\Controllers\Home\Doctors\DoctorsController;
 use App\Http\Controllers\Home\Services\ServicesController;
 use App\Http\Controllers\Home\Department\DepartmentController;
 use App\Http\Controllers\Home\Appointment\AppointmentController;
+use App\Http\Controllers\Dashboard\Career\CareerDashboardController;
 use App\Http\Controllers\Dashboard\Contact\ContactDashboardController;
 use App\Http\Controllers\Dashboard\Doctors\DoctorsDashboardController;
+use App\Http\Controllers\Dashboard\Services\ServicesDashboardController;
 use App\Http\Controllers\Dashboard\Appointment\AppointmentDashboardController;
 use App\Http\Controllers\Dashboard\DoctorsCategory\CategoryDashboardController;
 
@@ -23,6 +26,7 @@ Route::get('/doctors', [DoctorsController::class, 'index'])->name('doctors');
 Route::get('/about-doctor/{id}', [DoctorsController::class, 'AboutDoctor']);
 Route::get('/contact', [ContactController::class, 'index'])->name('contact us');
 Route::post('/contacts', [ContactController::class, 'store']);
+Route::get('/career', [CareerController::class, 'index']);
 
 Route::get('/appointment', [AppointmentController::class, 'index'])->name('index');
 Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
@@ -64,8 +68,25 @@ Route::get('appointments.index',[AppointmentDashboardController::class, 'index']
 Route::get('doctors.index',[DoctorsDashboardController::class, 'index']);
 Route::get('doctors.create',[DoctorsDashboardController::class, 'create']);
 Route::post('doctors.store',[DoctorsDashboardController::class, 'store']);
-
+Route::get('doctors.edit/{id}',[DoctorsDashboardController::class, 'edit']);
+Route::post('doctors.update/{id}',[DoctorsDashboardController::class, 'update']);
+Route::get('doctors.delete/{id}',[DoctorsDashboardController::class, 'delete']);
+// Dashboard Doctor Category Routs 
 Route::get('categories.index',[CategoryDashboardController::class, 'index']);
 Route::get('categories.create',[CategoryDashboardController::class, 'create']);
 Route::post('categories.store',[CategoryDashboardController::class, 'store']);
 
+Route::get('careers.index',[CareerDashboardController::class, 'index']);
+Route::get('careers.create',[CareerDashboardController::class, 'create']);
+Route::post('careers.store',[CareerDashboardController::class, 'store']);
+Route::get('careers.edit/{id}',[CareerDashboardController::class, 'edit']);
+Route::post('careers.update/{id}',[CareerDashboardController::class, 'update']);
+Route::get('careers.delete/{id}',[CareerDashboardController::class, 'detete']);
+
+
+Route::get('services.index',[ServicesDashboardController::class, 'index']);
+Route::get('services.create',[ServicesDashboardController::class, 'create']);
+Route::post('services.store',[ServicesDashboardController::class, 'store']);
+Route::get('services.edit/{id}',[ServicesDashboardController::class, 'edit']);
+Route::post('services.update/{id}',[ServicesDashboardController::class, 'update']);
+Route::get('services.delete/{id}',[ServicesDashboardController::class, 'detete']);

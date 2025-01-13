@@ -50,7 +50,8 @@
                                                     <th>Category</th>
                                                     <th>Profile Picture</th>
                                                     <th>Social Media</th>
-                                                    <th>Actions</th>
+                                                    <th>Edit</th>
+                                                    <th>Delete</th>
 
                                                 </tr>
                                             </thead>
@@ -85,7 +86,11 @@
                                                                 target="_blank">YouTube</a>
                                                         </td>
                                                         <td>
-                                                            <a href="{{ url('delete', $item->id) }}"
+                                                            <a href="{{ url('doctors.edit', $item->id) }}"
+                                                                class="btn btn-primary btn-sm">Edit</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="{{ url('doctors.delete', $item->id) }}"
                                                                 class="btn btn-danger btn-sm">Delete</a>
                                                         </td>
 
