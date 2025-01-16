@@ -69,7 +69,7 @@
                                                         <td>
                                                            
                                                             
-                                                            <a href="{{ url('appointments.adestroy', $item->id) }}"
+                                                            <a href="{{ url('adestroy', $item->id) }}"
                                                                 class="btn btn-sm btn-danger">Delete</a>
                                                             
                                                         </td>

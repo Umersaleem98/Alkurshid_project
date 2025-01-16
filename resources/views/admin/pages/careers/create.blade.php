@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <form action="{{ url('careers.store') }}" method="POST">
+                                        <form action="{{ url('careers_store') }}" method="POST">
                                             @csrf
                                             <div class="row">
                                                 <div class="col-md-6">

@@ -45,7 +45,7 @@
                                                     <th>Images</th>
                                                     <th>Title</th>
                                                     <th>Description</th>
-                                                    <th>Edit</th>
+                                                    {{-- <th>Edit</th> --}}
                                                     <th>Delete</th>
                                                 </tr>
                                             </thead>
@@ -66,14 +66,14 @@
 
                                                 <td>{{ $item->title }}</td>
                                                 <td>{{ $item->description }}</td>
-                                                <td>
-                                                    <a href="{{ url('services.edit', $item->id) }}" class="btn btn-sm btn-primary">
+                                                {{-- <td>
+                                                    <a href="{{ url('services_edit', $item->id) }}" class="btn btn-sm btn-primary">
                                                         Edit
                                                     </a>
                                                    
-                                                </td>
+                                                </td> --}}
                                                 <td>
-                                                    <a href="{{ url('services.delete', $item->id) }}" class="btn btn-sm btn-danger">
+                                                    <a href="{{ url('services_delete', $item->id) }}" class="btn btn-sm btn-danger">
                                                         Delete
                                                     </a>
                                                    

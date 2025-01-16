@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <form action="{{ url('doctors.store') }}" method="POST" enctype="multipart/form-data">
+                                        <form action="{{ url('doctors_store') }}" method="POST" enctype="multipart/form-data">
                                             @csrf
                                             
                                             <div class="form-group">

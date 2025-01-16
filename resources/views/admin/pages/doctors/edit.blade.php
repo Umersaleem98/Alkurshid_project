@@ -34,7 +34,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <form action="{{ url('doctors.update', $doctors->id) }}" method="POST" enctype="multipart/form-data">
+                                        <form action="{{ url('doctors_update', $doctors->id) }}" method="POST" enctype="multipart/form-data">
                                             @csrf
                                             
                                             <!-- Two Inputs in a Single Row -->

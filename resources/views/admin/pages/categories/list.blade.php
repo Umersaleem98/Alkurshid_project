@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en" dir="ltr">
 
 <head>
@@ -34,7 +34,7 @@
                                     <div class="card-body">
                                         <div class="table-responsive">
                                             <table id="productsTable" class="table table-hover table-product"
-                                      style="width:100%">
+                                                style="width:100%">
                                                 <thead>
                                                     <tr>
                                                         <th>Id</th>
@@ -47,15 +47,12 @@
                                                 <tbody>
                                                     @foreach ($doctorcategiries as $item)
                                                         <tr>
-                                                            <td>{{ $item->id }}</td>
-    
+                                                            <td>{{ $item->id }}</td>    
                                                             <td>{{ $item->name }}</td>
-                                                            <td>{{ $item->description }}</td>
-                                                            
+                                                            <td>{{ $item->description }}</td>                                                            
                                                             <td>
-                                                                <a href="{{ url('delete', $item->id) }}" class="btn btn-danger btn-sm">Delete</a>
+                                                                <a href="{{ url('category_delete', $item->id) }}" class="btn btn-danger btn-sm">Delete</a>
                                                             </td>
-    
                                                         </tr>
                                                     @endforeach
     

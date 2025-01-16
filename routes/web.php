@@ -58,35 +58,37 @@ Route::middleware('auth')->group(function () {
 });
 
 // Dashboard Contact Routs 
-Route::get('contact.index',[ContactDashboardController::class, 'index']);
+Route::get('contact_index',[ContactDashboardController::class, 'index']);
 Route::get('/delete/{id}', [ContactDashboardController::class, 'destroy']);
 
 // Dashboard appointments Routs 
-Route::get('appointments.index',[AppointmentDashboardController::class, 'index']);
+Route::get('appointments_index',[AppointmentDashboardController::class, 'index']);
 
 // Dashboard Doctor Routs 
-Route::get('doctors.index',[DoctorsDashboardController::class, 'index']);
-Route::get('doctors.create',[DoctorsDashboardController::class, 'create']);
-Route::post('doctors.store',[DoctorsDashboardController::class, 'store']);
-Route::get('doctors.edit/{id}',[DoctorsDashboardController::class, 'edit']);
-Route::post('doctors.update/{id}',[DoctorsDashboardController::class, 'update']);
-Route::get('doctors.delete/{id}',[DoctorsDashboardController::class, 'delete']);
+Route::get('doctors_index',[DoctorsDashboardController::class, 'index']);
+Route::get('doctors_create',[DoctorsDashboardController::class, 'create']);
+Route::post('doctors_store',[DoctorsDashboardController::class, 'store']);
+Route::get('doctors_edit/{id}',[DoctorsDashboardController::class, 'edit']);
+Route::post('doctors_update/{id}',[DoctorsDashboardController::class, 'update']);
+Route::get('doctors_delete/{id}',[DoctorsDashboardController::class, 'delete']);
 // Dashboard Doctor Category Routs 
-Route::get('categories.index',[CategoryDashboardController::class, 'index']);
-Route::get('categories.create',[CategoryDashboardController::class, 'create']);
-Route::post('categories.store',[CategoryDashboardController::class, 'store']);
 
-Route::get('careers.index',[CareerDashboardController::class, 'index']);
-Route::get('careers.create',[CareerDashboardController::class, 'create']);
-Route::post('careers.store',[CareerDashboardController::class, 'store']);
-Route::get('careers.edit/{id}',[CareerDashboardController::class, 'edit']);
-Route::post('careers.update/{id}',[CareerDashboardController::class, 'update']);
-Route::get('careers.delete/{id}',[CareerDashboardController::class, 'detete']);
+Route::get('categories_index',[CategoryDashboardController::class, 'index']);
+Route::get('categories_create',[CategoryDashboardController::class, 'create']);
+Route::post('categories_store',[CategoryDashboardController::class, 'store']);
+Route::get('category_delete/{id}',[CategoryDashboardController::class, 'delete']);
+
+Route::get('careers_index',[CareerDashboardController::class, 'index']);
+Route::get('careers_create',[CareerDashboardController::class, 'create']);
+Route::post('careers_store',[CareerDashboardController::class, 'store']);
+Route::get('careers_edit/{id}',[CareerDashboardController::class, 'edit']);
+Route::post('careers_update/{id}',[CareerDashboardController::class, 'update']);
+Route::get('careers_delete/{id}',[CareerDashboardController::class, 'detete']);
 
 
-Route::get('services.index',[ServicesDashboardController::class, 'index']);
-Route::get('services.create',[ServicesDashboardController::class, 'create']);
-Route::post('services.store',[ServicesDashboardController::class, 'store']);
-Route::get('services.edit/{id}',[ServicesDashboardController::class, 'edit']);
-Route::post('services.update/{id}',[ServicesDashboardController::class, 'update']);
-Route::get('services.delete/{id}',[ServicesDashboardController::class, 'detete']);
+Route::get('services_index',[ServicesDashboardController::class, 'index']);
+Route::get('services_create',[ServicesDashboardController::class, 'create']);
+Route::post('services_store',[ServicesDashboardController::class, 'store']);
+// Route::get('services_edit/{id}',[ServicesDashboardController::class, 'edit']);
+// Route::post('services_update/{id}',[ServicesDashboardController::class, 'update']);
+Route::get('services_delete/{id}',[ServicesDashboardController::class, 'detete']);

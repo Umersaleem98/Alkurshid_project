@@ -38,7 +38,7 @@
                                                 <h4 class="card-title">Service Details</h4>
                                             </div>
                                             <div class="card-body">
-                                                <form action="{{ url('services.store') }}" method="POST" enctype="multipart/form-data">
+                                                <form action="{{ url('services_store') }}" method="POST" enctype="multipart/form-data">
                                                     @csrf
                                                     <div class="mb-3">
                                                         <label for="icon" class="form-label">Icon</label>

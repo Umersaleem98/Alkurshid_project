@@ -69,11 +69,11 @@
                                                         <td>{{ $item->description }}</td>
                                                         <td>{{ ucfirst($item->status) }}</td>
                                                         <td>
-                                                            <a href="{{ url('careers.edit', $item->id) }}" class="btn btn-sm btn-warning">Edit</a>
+                                                            <a href="{{ url('careers_edit', $item->id) }}" class="btn btn-sm btn-warning">Edit</a>
                                                            
                                                         </td>
                                                         <td>
-                                                            <a href="{{ url('careers.delete', $item->id) }}" class="btn btn-sm btn-danger">Delete</a>
+                                                            <a href="{{ url('careers_delete', $item->id) }}" class="btn btn-sm btn-danger">Delete</a>
                                                         </td>
                                                     </tr>
                                                 @endforeach

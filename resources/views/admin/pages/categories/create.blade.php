@@ -32,7 +32,7 @@
                                 </div>
                                 <div class="card-body">
                                     <!-- Form to create doctor category -->
-                                    <form action="{{ url('categories.store') }}" method="POST">
+                                    <form action="{{ url('categories_store') }}" method="POST">
                                         @csrf
                                         <div class="form-group">
                                             <label for="category_name">Category Name</label>

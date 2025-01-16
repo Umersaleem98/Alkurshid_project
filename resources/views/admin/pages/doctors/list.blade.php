@@ -86,11 +86,11 @@
                                                                 target="_blank">YouTube</a>
                                                         </td>
                                                         <td>
-                                                            <a href="{{ url('doctors.edit', $item->id) }}"
+                                                            <a href="{{ url('doctors_edit', $item->id) }}"
                                                                 class="btn btn-primary btn-sm">Edit</a>
                                                         </td>
                                                         <td>
-                                                            <a href="{{ url('doctors.delete', $item->id) }}"
+                                                            <a href="{{ url('doctors_delete', $item->id) }}"
                                                                 class="btn btn-danger btn-sm">Delete</a>
                                                         </td>
 

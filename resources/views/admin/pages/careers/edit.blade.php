@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <form action="{{ url('careers.update', $careers->id) }}" method="POST">
+                                        <form action="{{ url('careers_update', $careers->id) }}" method="POST">
                                             @csrf
                                             <div class="row">
                                                 <div class="col-md-6">

@@ -29,4 +29,13 @@ class CategoryDashboardController extends Controller
         return redirect()->back()
             ->with('success', 'Category created successfully.');
     }
+
+    public function delete($id)
+    {
+        $doctorcategiries = DoctorCategory::find($id);
+        $doctorcategiries->delete();
+
+        return redirect()->back()
+            ->with('success', 'Category deleted successfully.');
+    }
 }

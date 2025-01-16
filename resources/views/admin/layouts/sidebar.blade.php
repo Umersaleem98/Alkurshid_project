@@ -12,28 +12,7 @@
             <!-- sidebar menu -->
             <ul class="nav sidebar-inner" id="sidebar-menu">
 
-                <li class="has-sub">
-                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#email"
-                        aria-expanded="false" aria-controls="email">
-                        <i class="mdi mdi-email"></i>
-                        <span class="nav-text">email</span> <b class="caret"></b>
-                    </a>
-                    <ul class="collapse" id="email" data-parent="#sidebar-menu">
-                        <div class="sub-menu">
-
-
-
-                            <li>
-                                <a class="sidenav-item-link" href="email-inbox.html">
-                                    <span class="nav-text">Email Inbox</span>
-
-                                </a>
-                            </li>
-
-                        </div>
-                    </ul>
-                </li>
-
+            
                 <li class="has-sub">
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#doctor-category"
                         aria-expanded="false" aria-controls="doctor-category">
@@ -44,13 +23,13 @@
                         <div class="sub-menu">
                 
                             <li>
-                                <a class="sidenav-item-link" href="{{ url('categories.index') }}">
+                                <a class="sidenav-item-link" href="{{ url('categories_index') }}">
                                     <span class="nav-text">Category List</span>
                                 </a>
                             </li>
                 
                             <li>
-                                <a class="sidenav-item-link" href="{{ url('categories.create') }}">
+                                <a class="sidenav-item-link" href="{{ url('categories_create') }}">
                                     <span class="nav-text">Add Category</span>
                                 </a>
                             </li>
@@ -70,13 +49,13 @@
                         <div class="sub-menu">
                 
                             <li>
-                                <a class="sidenav-item-link" href="{{ url('doctors.index') }}">
+                                <a class="sidenav-item-link" href="{{ url('doctors_index') }}">
                                     <span class="nav-text">Doctor List</span>
                                 </a>
                             </li>
                 
                             <li>
-                                <a class="sidenav-item-link" href="{{ url('doctors.create') }}">
+                                <a class="sidenav-item-link" href="{{ url('doctors_create') }}">
                                     <span class="nav-text">Add Doctor</span>
                                 </a>
                             </li>
@@ -96,13 +75,13 @@
                         <div class="sub-menu">
                 
                             <li>
-                                <a class="sidenav-item-link" href="{{ url('appointments.index') }}">
+                                <a class="sidenav-item-link" href="{{ url('appointments_index') }}">
                                     <span class="nav-text">Appointment List</span>
                                 </a>
                             </li>
                 
                             <li>
-                                <a class="sidenav-item-link" href="{{ url('appointments.create') }}">
+                                <a class="sidenav-item-link" href="{{ url('appointments_create') }}">
                                     <span class="nav-text">Add Appointment</span>
                                 </a>
                             </li>
@@ -114,27 +93,25 @@
                 <li class="has-sub">
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#services"
                         aria-expanded="false" aria-controls="services">
-                        <i class="mdi mdi-cog-outline"></i>
+                        <i class="fa fa-concierge-bell"></i>
                         <span class="nav-text">Services</span> <b class="caret"></b>
                     </a>
                     <ul class="collapse" id="services" data-parent="#sidebar-menu">
                         <div class="sub-menu">
-                
                             <li>
-                                <a class="sidenav-item-link" href="{{ url('services.index') }}">
+                                <a class="sidenav-item-link" href="{{ url('services_index') }}">
                                     <span class="nav-text">Service List</span>
                                 </a>
                             </li>
-                
                             <li>
-                                <a class="sidenav-item-link" href="{{ url('services.create') }}">
+                                <a class="sidenav-item-link" href="{{ url('services_create') }}">
                                     <span class="nav-text">Add Service</span>
                                 </a>
                             </li>
-                
                         </div>
                     </ul>
                 </li>
+                
                 
                 <li class="has-sub">
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#careers"
@@ -146,13 +123,13 @@
                         <div class="sub-menu">
                 
                             <li>
-                                <a class="sidenav-item-link" href="{{ url('careers.index') }}">
+                                <a class="sidenav-item-link" href="{{ url('careers_index') }}">
                                     <span class="nav-text">Career List</span>
                                 </a>
                             </li>
                 
                             <li>
-                                <a class="sidenav-item-link" href="{{ url('careers.create') }}">
+                                <a class="sidenav-item-link" href="{{ url('careers_create') }}">
                                     <span class="nav-text">Add Career</span>
                                 </a>
                             </li>
@@ -171,16 +148,16 @@
                         <div class="sub-menu">
                 
                             <li>
-                                <a class="sidenav-item-link" href="{{ url('contact.index') }}">
+                                <a class="sidenav-item-link" href="{{ url('contact_index') }}">
                                     <span class="nav-text">Contact List</span>
                                 </a>
                             </li>
                 
-                            <li>
+                            {{-- <li>
                                 <a class="sidenav-item-link" href="contact-add.html">
                                     <span class="nav-text">Add Contact</span>
                                 </a>
-                            </li>
+                            </li> --}}
                 
                         </div>
                     </ul>
