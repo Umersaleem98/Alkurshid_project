@@ -15,9 +15,10 @@
 
       <div class="container position-relative d-flex align-items-center justify-content-end">
         <a href="{{ url('/') }}" class="logo d-flex align-items-center me-auto">
-          {{-- <img src="templates/assets/img/logo.png" alt=""> --}}
+          <img src="{{ asset('templates/assets/img/logo.png') }}" alt="">
+
           <!-- Uncomment the line below if you also wish to use a text logo -->
-          <h1 class="sitename">LOGO</h1>
+          {{-- <h1 class="sitename">LOGO</h1> --}}
         </a>
 
         <nav id="navmenu" class="navmenu">
