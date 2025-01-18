@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Home\About\AboutController;
@@ -14,10 +15,10 @@ use App\Http\Controllers\Home\Appointment\AppointmentController;
 use App\Http\Controllers\Dashboard\Career\CareerDashboardController;
 use App\Http\Controllers\Dashboard\Contact\ContactDashboardController;
 use App\Http\Controllers\Dashboard\Doctors\DoctorsDashboardController;
+use App\Http\Controllers\Dashboard\Testimonials\TestimonialsController;
 use App\Http\Controllers\Dashboard\Services\ServicesDashboardController;
 use App\Http\Controllers\Dashboard\Appointment\AppointmentDashboardController;
 use App\Http\Controllers\Dashboard\DoctorsCategory\CategoryDashboardController;
-use Illuminate\Support\Facades\Artisan;
 
 Route::get('/clear-all', function () {
     // Clear application cache
@@ -112,3 +113,11 @@ Route::post('services_store',[ServicesDashboardController::class, 'store']);
 // Route::get('services_edit/{id}',[ServicesDashboardController::class, 'edit']);
 // Route::post('services_update/{id}',[ServicesDashboardController::class, 'update']);
 Route::get('services_delete/{id}',[ServicesDashboardController::class, 'detete']);
+
+
+Route::get('testimonials_index',[TestimonialsController::class, 'index']);
+Route::get('testimonials_create',[TestimonialsController::class, 'create']);
+Route::post('testimonials_store',[TestimonialsController::class, 'store']);
+Route::get('testimonials_edit/{id}',[TestimonialsController::class, 'edit']);
+Route::post('testimonials_update/{id}',[TestimonialsController::class, 'update']);
+Route::get('testimonials_delete/{id}',[TestimonialsController::class, 'destroy']);

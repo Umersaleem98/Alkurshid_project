@@ -40,9 +40,9 @@
     <!-- Gallery Section -->
   @include('templates.layouts.gallary')
     <!-- Pricing Section -->
-  @include('templates.layouts.pricing')
+  {{-- @include('templates.layouts.pricing') --}}
     <!-- Faq Section -->
-   @include('templates.layouts.faq')
+   {{-- @include('templates.layouts.faq') --}}
 
     {{-- <!-- Contact Section -->
  @include('templates.layouts.contact') --}}

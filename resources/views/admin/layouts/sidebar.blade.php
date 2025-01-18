@@ -93,7 +93,7 @@
                 <li class="has-sub">
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#services"
                         aria-expanded="false" aria-controls="services">
-                        <i class="fa fa-concierge-bell"></i>
+                        <i class="mdi mdi-comment-account"></i>
                         <span class="nav-text">Services</span> <b class="caret"></b>
                     </a>
                     <ul class="collapse" id="services" data-parent="#sidebar-menu">
@@ -162,6 +162,33 @@
                         </div>
                     </ul>
                 </li>
+
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#testimonials"
+                        aria-expanded="false" aria-controls="testimonials">
+                        <i class="mdi mdi-comment-account"></i>
+                        <span class="nav-text">Testimonials</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse" id="testimonials" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+                            <li>
+                                <a class="sidenav-item-link" href="{{ url('testimonials_index') }}">
+                                    <span class="nav-text">Testimonials List</span>
+                                </a>
+                            </li>
+                
+                            {{-- Uncomment the following section if needed --}}
+                             
+                            <li>
+                                <a class="sidenav-item-link" href="{{ url('testimonials_create') }}">
+                                    <span class="nav-text">Add Testimonial</span>
+                                </a>
+                            </li>
+                           
+                        </div>
+                    </ul>
+                </li>
+                
                 
             </ul>
         </div>
