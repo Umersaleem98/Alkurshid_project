@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Home\About\AboutController;
 use App\Http\Controllers\Home\Career\CareerController;
@@ -72,10 +73,15 @@ Route::post('/logout', function () {
 
 // Dashboard Routes 
 
+// Route::middleware('auth')->group(function () {
+//     Route::get('/dashboard', function () {
+
+//         return view('dashboard');
+//     });
+// });
+
 Route::middleware('auth')->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    });
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
 
 // Dashboard Contact Routs 
