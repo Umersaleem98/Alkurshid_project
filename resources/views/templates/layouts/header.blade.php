@@ -1,15 +1,16 @@
 <header id="header" class="header sticky-top">
 
-    <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="d-none d-md-flex align-items-center">
-          <i class="bi bi-clock me-1"></i> Monday - Saturday, 8AM to 10PM
-        </div>
-        <div class="d-flex align-items-center">
-          <i class="bi bi-phone me-1"></i> Call us now +1 5589 55488 55
-        </div>
+  <div class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="d-none d-md-flex align-items-center">
+        <i class="bi bi-clock me-1"></i> Monday - Saturday, 8 AM to 12 AM
       </div>
-    </div><!-- End Top Bar -->
+      <div class="d-flex align-items-center">
+        <i class="bi bi-phone me-1"></i> Call us now +1 5589 55488 55
+      </div>
+    </div>
+  </div><!-- End Top Bar -->
+  
 
     <div class="branding d-flex align-items-center">
 
@@ -35,6 +36,7 @@
                 <li><a href="{{ url('departments/pathology') }}">Pathology</a></li>
                 <li><a href="{{ url('departments/radiology') }}">Radiology</a></li>
                 <li><a href="{{ url('departments/cardiology') }}">Cardiology</a></li>
+                <li><a href="{{ url('departments/bloodbank') }}">Blood Bank</a></li>
               </ul>
             </li>
             

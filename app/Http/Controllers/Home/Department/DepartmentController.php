@@ -21,4 +21,9 @@ class DepartmentController extends Controller
     {
         return view('templates.pages.departments.radiology');
     }
+   
+    public function Bloodbank()
+    {
+        return view('templates.pages.departments.bloodbank');
+    }
 }

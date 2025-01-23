@@ -11,10 +11,11 @@ use App\Http\Controllers\Controller;
 class HomeController extends Controller
 {
     public function index()
-    {
-        $services = Service::all();
-        $testimonials = Testimonial::all();
-        $doctors = Doctor::all();
-        return view('index', compact('doctors', 'testimonials', 'services'));
-    }
+{
+    $services = Service::all();
+    $testimonials = Testimonial::all();
+    $doctors = Doctor::paginate(8); // Paginate doctors, 8 per page
+    return view('index', compact('doctors', 'testimonials', 'services'));
+}
+
 }

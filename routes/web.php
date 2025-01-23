@@ -57,6 +57,7 @@ Route::post('/appointments', [AppointmentController::class, 'store'])->name('app
 Route::get('/departments/pathology', [DepartmentController::class, 'Pathology'])->name('pathology');
 Route::get('/departments/cardiology', [DepartmentController::class, 'Cardiology'])->name('cardiology');
 Route::get('/departments/radiology', [DepartmentController::class, 'Radiology'])->name('radiology');
+Route::get('/departments/bloodbank', [DepartmentController::class, 'Bloodbank'])->name('bloodbank');
 
 // Auth Routes 
 Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');

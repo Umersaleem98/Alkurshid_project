@@ -91,15 +91,17 @@
               </div>
 
           </div>
-
-            <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-              <iframe style="border:0; width: 100%; height: 370px;"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13608.720059468807!2d74.30903606679918!3d31.520355064998226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919038d0be5b889%3A0xc1f2a0f5d4533c34!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1676961268712"
-              frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-         
-            </div><!-- End Google Maps -->
-
+          <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+            <iframe 
+              style="border:0; width: 100%; height: 370px;" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13608.720059468807!2d74.3366776!3d31.5877552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191b0034a68b55%3A0x98e1cf5e249c8df2!2sKhusheed+Lab!5e0!3m2!1sen!2s!4v1676961268712" 
+              frameborder="0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          
            
         </section><!-- /Contact Section -->
     </main>

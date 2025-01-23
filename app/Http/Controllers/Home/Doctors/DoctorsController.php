@@ -11,9 +11,10 @@ class DoctorsController extends Controller
 {
     public function index()
     {
-        $doctors = Doctor::all();
-        return view('templates.pages.doctors.doctors',compact('doctors'));
+        $doctors = Doctor::paginate(8); // Paginate with 10 items per page
+        return view('templates.pages.doctors.doctors', compact('doctors'));
     }
+   
    
     public function AboutDoctor($id)
 {
