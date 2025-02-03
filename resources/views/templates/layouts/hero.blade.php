@@ -3,30 +3,34 @@
     <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
       <div class="carousel-item active">
-        <img src="templates/assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+        <img src="templates/assets/img/hero-carousel/hero-carousel-1.jpg" alt="Al Khurshid Diagnostic Center">
         <div class="container">
-          <h2>Welcome to Medicio</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <a href="#about" class="btn-get-started">Read More</a>
+            <h2>Welcome to Al Khurshid Diagnostic Center</h2>
+            <p>At Al Khurshid Diagnostic Center, we provide comprehensive diagnostic services with state-of-the-art technology, ensuring accurate and timely results. Our dedicated team of professionals is committed to delivering the highest quality healthcare services, empowering patients with essential information for their well-being.</p>
+            <p>From routine tests to specialized screenings, we cater to a wide range of diagnostic needs, prioritizing patient care and comfort at every step. Trust us for your health, as we continue to set the standard for excellence in diagnostics.</p>
+            <a href="#about" class="btn-get-started">Learn More About Us</a>
         </div>
-      </div><!-- End Carousel Item -->
+    </div><!-- End Carousel Item -->
+    
 
       <div class="carousel-item">
         <img src="templates/assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
         <div class="container">
-          <h2>At vero eos et accusamus</h2>
-          <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
-          <a href="#about" class="btn-get-started">Read More</a>
-        </div>
+          <h2>Welcome to Al Khurshid Diagnostic Center</h2>
+          <p>At Al Khurshid Diagnostic Center, we provide comprehensive diagnostic services with state-of-the-art technology, ensuring accurate and timely results. Our dedicated team of professionals is committed to delivering the highest quality healthcare services, empowering patients with essential information for their well-being.</p>
+          <p>From routine tests to specialized screenings, we cater to a wide range of diagnostic needs, prioritizing patient care and comfort at every step. Trust us for your health, as we continue to set the standard for excellence in diagnostics.</p>
+          <a href="#about" class="btn-get-started">Learn More About Us</a>
+      </div>
       </div><!-- End Carousel Item -->
 
       <div class="carousel-item">
         <img src="templates/assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
         <div class="container">
-          <h2>Temporibus autem quibusdam</h2>
-          <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-          <a href="#about" class="btn-get-started">Read More</a>
-        </div>
+          <h2>Welcome to Al Khurshid Diagnostic Center</h2>
+          <p>At Al Khurshid Diagnostic Center, we provide comprehensive diagnostic services with state-of-the-art technology, ensuring accurate and timely results. Our dedicated team of professionals is committed to delivering the highest quality healthcare services, empowering patients with essential information for their well-being.</p>
+          <p>From routine tests to specialized screenings, we cater to a wide range of diagnostic needs, prioritizing patient care and comfort at every step. Trust us for your health, as we continue to set the standard for excellence in diagnostics.</p>
+          <a href="#about" class="btn-get-started">Learn More About Us</a>
+      </div>
       </div><!-- End Carousel Item -->
 
       <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">

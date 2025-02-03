@@ -44,7 +44,7 @@
         <!-- Stats Section -->
         @include('templates.layouts.stats')
         <!-- Features Section -->
-        @include('templates.layouts.featurs')
+        {{-- @include('templates.layouts.featurs') --}}
         <!-- Services Section -->
         @include('templates.layouts.services')
         <!-- Appointment Section -->

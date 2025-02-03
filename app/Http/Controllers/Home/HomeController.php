@@ -12,10 +12,20 @@ class HomeController extends Controller
 {
     public function index()
 {
+    
     $services = Service::all();
-    $testimonials = Testimonial::all();
-    $doctors = Doctor::paginate(8); // Paginate doctors, 8 per page
-    return view('index', compact('doctors', 'testimonials', 'services'));
-}
+
+        // Get all testimonials
+        $testimonials = Testimonial::all();
+
+        // Paginate doctors, 8 per page
+        $doctors = Doctor::paginate(8);
+
+        // Get total count of doctors
+        $doctorCount = Doctor::count();
+
+        // Pass data to the view
+        return view('index', compact('doctors', 'testimonials', 'services', 'doctorCount'));
+    }
 
 }

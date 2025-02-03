@@ -47,7 +47,8 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="cta-btn" href="{{ url('appointment') }}">Make an Appointment</a>
+        <a class="cta-btn d-none d-md-block" href="{{ url('appointment') }}">Make an Appointment</a>
+
 
       </div>
 
