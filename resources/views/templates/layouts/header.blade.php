@@ -6,7 +6,7 @@
         <i class="bi bi-clock me-1"></i> Monday - Saturday, 8 AM to 12 AM
       </div>
       <div class="d-flex align-items-center">
-        <i class="bi bi-phone me-1"></i> Call us now +1 5589 55488 55
+        <i class="bi bi-phone me-1"></i> Call us now +92 3228023744
       </div>
     </div>
   </div><!-- End Top Bar -->
